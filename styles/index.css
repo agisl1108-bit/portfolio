@@ -1,0 +1,147 @@
+/* 모바일 기준 w440 */
+html {scroll-behavior:smooth;} /* 스크롤 애니메이션 효과 */
+html {scrollbar-width: 10px;;scrollbar-color: #e8a8bb #fce7ae;}
+html::-o-scrollbar {width: 10px;}
+html::-o-scrollbar-thumb {background-color: #e8a8bb;border-radius: 5px;}
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}
+::-webkit-scrollbar-thumb {background-color: #e8a8bb;border-radius: 5px;}
+body {background-color:#222;}
+#wrap {
+    width:440px; /* 디자인 기준 크기(iphone 17proMax)*/
+    min-width:320px; /* 최소 제한 너비 (고정) */
+    max-width:440px; /* 최대 제한 너비 (디자인에 따라 다름) */
+    box-shadow:0 10px 10px rgba(0,0,0,0.3);
+    background-color:#fff;
+    overflow-x:hidden; margin:0 auto;
+    height:100vh;
+
+}
+/* ==================================================================1. intro */
+#wrap .intro {
+    height:100vh;
+    background:linear-gradient(#fff, #E59494 90%);
+    display:flex; flex-flow:row nowrap;
+    justify-content:center; align-items:center;
+}
+#wrap .intro h1 {}
+#wrap .intro h1 span {
+    display:block; text-align:center;
+    line-height:1.4;
+}
+#wrap .intro h1 span:nth-child(1) {
+    font-size:1.13rem;
+    
+}
+#wrap .intro h1 span:nth-child(2) {
+    font-size:1.13rem;
+    font-weight:500;
+}
+#wrap .intro h1 .name {
+    margin:26px;
+}
+/* ==================================================================2. info */
+#wrap > .info {
+    height:100vh;
+    display:flex; flex-flow:column nowrap;
+    justify-content:center; align-items:center;
+}
+#wrap .info .photo {
+    width:194px; height:210px; border-radius:9px;
+    background-color:#ddd;
+}
+#wrap .info .photo img {width:100%;}
+#wrap .info .me {
+    display:flex; flex-flow:row wrap;
+    justify-content:space-around;
+}
+#wrap .info .me li {
+    width:100%;
+    margin:12px;
+    text-align:center;
+    line-height:1.4;
+}
+#wrap .info .me li:nth-child(1) {text-align:right;}
+#wrap .info .me li:nth-child(2) {text-align:left;}
+#wrap .info .me li:nth-child(1),
+#wrap .info .me li:nth-child(2) {width:30%;}
+#wrap .info .me li:last-child {margin:0;}
+#wrap .info .me li a {}
+#wrap .info p {margin:22px;}
+#wrap .info p img {width:100%;}
+#wrap .info .skill_list {
+    display:flex; flex-flow:row wrap;
+    justify-content:center; gap:12px;
+}
+#wrap .info .skill_list p {
+    width:calc(100% / 6); margin:0 0 12px;
+}
+#wrap .info .skill_list p img {
+    width:100%;
+}
+/* ==================================================================3. project */
+#wrap .project_wrap {text-align: center; padding:10px 0;}
+#wrap .project_wrap h1 {
+    font-size:1.38rem; font-weight:700;
+}
+/* ==================================================================공통 프로젝트 */
+#wrap .project_wrap .project {
+    margin:14px auto;
+    max-width: 560px;
+}
+#wrap .project_wrap .project h2 {}
+#wrap .project_wrap .project h2 span {}
+#wrap .project_wrap .project h2,
+#wrap .project_wrap .project h2 span {font-size:1.38rem; font-weight:600;}
+#wrap .project_wrap .project .mockup {height:372px; overflow:hidden;}
+#wrap .project_wrap .project .mockup img {width:100%; margin:14px 0;}
+#wrap .project_wrap .project .info,
+    #wrap .project_wrap .project .plan {text-align:left;}
+#wrap .project_wrap .project .info {
+    width: 100%;
+    margin: 0 0 18px;
+    padding:15px;
+}
+#wrap .project_wrap .project .info li {
+    font-size:0.88rem;
+    line-height:1.5;
+    position: relative;
+    padding-left:15px;
+}
+#wrap .project_wrap .project .info li::before {
+    content:''; display: block;
+    position: absolute; left:0; top:50%; transform:translateY(-50%);
+    background:#222; border-radius:50%; width:4px; height:4px;
+}
+#wrap .project_wrap .project .plan {
+    font-size:0.88rem;
+    line-height:1.5;
+    margin:14px 0;
+    padding:15px;
+}
+#wrap .project_wrap .project .link {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+#wrap .project_wrap .project .link a {
+    display:flex; flex-flow:row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size:0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+#wrap .project_wrap .project .link .proposal {
+    background: #f2a3a3;
+    color: #ffffff;
+}
+#wrap .project_wrap .project .link .prototype {
+    background: #E07F7F;
+    color: #ffffff;
+}
+
+/* ==================================================================개별 프로젝트 */
