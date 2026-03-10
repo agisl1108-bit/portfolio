@@ -1,0 +1,120 @@
+/* responsive.css */
+@media screen and (min-width:600px) {
+    /* 1행 글자크기 , 여백 등 */
+    #wrap .intro h1 span:nth-child(1) {
+        font-size: 1.50rem;
+    }
+    #wrap .intro h1 span:nth-child(2) {
+        font-size: 1.50rem;
+        font-weight: 600;
+    }
+    #wrap .intro h1 .name {
+        margin: 34px;
+    }
+    /* 3행 프로젝트 이미지 w100% */
+    #wrap .project_wrap .project .title_thum .mockup img {
+        height: auto; /* 100% 덮어쓰기값으로 auto변경 */
+        width: 100%;
+    }
+    /* 4행 그래픽 이미지 확대 */
+    #wrap .project_wrap .graphic_wrap .graphic_container a {
+        width: 246px; height: 400px;
+    }
+}/* 사용자가 보는 기기 너비가 600보다 크면 */
+@media screen and (min-width:840px) {
+    /* 2행 info -> 1행 2열 레이아웃 구조 변경 */
+    #wrap > .info {
+        height: auto; padding: 100px 0;
+        flex-flow:row nowrap;
+        justify-content:center;
+        align-items:flex-start;
+    }
+    #wrap .info .details{
+        display:block;
+        margin: 24px;
+        max-width:520px;
+    }
+    #wrap .info .details dl {margin: 24px 0;}
+    #wrap .info .details dl dt {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    #wrap .info .details dl dd {line-height: 1.5; font-size: 1.00rem;}
+    #wrap .info .profile .me li {font-size: 1.13rem; white-space: nowrap;}
+    #wrap .info .profile {width: 260px;}
+    #wrap .info .profile .skill_list p {width:calc(100% / 5);}
+    #wrap .info .profile .skill_list p img {width: 70%;}
+    /* 3행 web -> 1행 2열 레이아웃 구조 변경 */
+    /* -----------------------------------------3. project */
+    #wrap .project_wrap h1 {font-size: 1.63rem;}
+    #wrap > .info,
+    #wrap .project_wrap {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    /* ------------------------------------------공통 */
+    #wrap .project_wrap .project {
+        max-width: 1120px;
+        margin: 30px auto 0;
+        text-align: left;
+    }
+    #wrap .project_wrap .project .title_thum h2 {margin-bottom: 18px;}
+    #wrap .project_wrap .project .title_thum,
+    #wrap .project_wrap .project .details {
+        width: 100%;
+    }
+    #wrap .project_wrap .project {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 40px;
+    }
+    #wrap .project_wrap .project .title_thum .mockup {
+        height: 420px;
+        margin: 0;
+    }
+    #wrap .project_wrap .project .title_thum .mockup img {
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
+    }
+    #wrap .project_wrap .project .details {padding-top: 75px;}
+    #wrap .project_wrap .project .details .info {padding: 0;}
+    #wrap .project_wrap .project .details .plan {
+        margin: 0 0 80px;
+        padding: 0;
+    }
+    #wrap .project_wrap .project .details .link {gap: 20px;}
+    #wrap .project_wrap .project .title_thum h2,
+    #wrap .project_wrap .project .title_thum h2 span {font-size: 1.50rem;}
+    #wrap .project_wrap .project .details .info li,
+    #wrap .project_wrap .project .details .plan {font-size: 1.00rem;}
+    #wrap .project_wrap .project .details .link a {
+        font-size: 1.00rem;
+        padding: 15px 20px;
+    }
+    /* 4행 그래픽 이미지 확대 */
+    /* -----------------------------------------그래픽 프로젝트 */
+    #wrap .project_wrap h1+p {font-size: 1.00rem;}
+    #wrap .project_wrap .graphic_wrap {
+        padding: 0;
+    }
+    #wrap .project_wrap .graphic_wrap .graphic_container {
+        justify-content: center;
+    }
+    #wrap .project_wrap .graphic_wrap .graphic_container a {
+        width: 180px;
+        height: 260px;
+    }
+    /* -----------------------------------------(위) 그래픽 이미지 클릭 시 실행되는 팝업 */
+    #wrap .project_wrap .graphic_popup_bg .popup {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+    }
+}/* 사용자가 보는 기기 너비가 840보다 크면 */
